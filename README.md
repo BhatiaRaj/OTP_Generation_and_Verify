@@ -10,3 +10,7 @@ OTP Verification is the process of verifying a user by sending a unique password
 * Time
 * Os
 
+# Screenshort:
+![image](https://user-images.githubusercontent.com/97431540/159105910-464f2070-55b2-43c5-ba29-a875f9ff5ba5.png)
+
+
