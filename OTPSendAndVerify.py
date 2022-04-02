@@ -1,6 +1,5 @@
 from asyncore import read
 from gzip import READ
-import string
 from tkinter import *
 from tkinter import messagebox
 import smtplib
@@ -38,18 +37,13 @@ def send():
                    otp+' Note..  Please enter otp within 2 minutes and 3 attempts, otherwise it becomes invalid')
         messagebox.showinfo("Send OTP via Email",f"OTP sent to {email_entry.get()}")
         s.quit()
-        a = input("Enter Your OTP >>: ")
-        if a == otp:
-             print("Verified")
-        else:
-             print("Please Check your OTP again")
         os.system('python second.py')
     except:
         messagebox.showinfo(
             "Send OTP via Email", "Please enter the valid email address OR check an internet connection")
 
 
-send_button = Button(root, text="Send Email", font=(
-    "ariel 15 bold"), bg="black", fg="green2", bd=3, command=send)
+send_button = Button(root, text="Generate OTP", font=(
+    "ariel 15 bold"), bg="black", fg="white", bd=5, command=send)
 send_button.place(x=210, y=150)
 root.mainloop()
