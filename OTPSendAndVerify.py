@@ -32,8 +32,8 @@ def send():
     try:
         s = smtplib.SMTP("smtp.gmail.com", 587)  # 587 is a port number
         s.starttls()
-        s.login("tasktracker21.21@gmail.com", "apoovqebboorkusw")
-        s.sendmail("tasktracker21.21@gmail.com", email_entry.get(), 'Your OTP Verification for app is ' +
+        s.login("----Gmail_Id----", "----App Password----")
+        s.sendmail("----Gmail_Id----", email_entry.get(), 'Your OTP Verification for app is ' +
                    otp+' Note..  Please enter otp within 2 minutes and 3 attempts, otherwise it becomes invalid')
         messagebox.showinfo("Send OTP via Email",f"OTP sent to {email_entry.get()}")
         s.quit()
